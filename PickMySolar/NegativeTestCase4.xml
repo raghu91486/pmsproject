@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+ 
+  <test  name="Amazon Login for valid PhoneNumber and Invalid Password" preserve-order="true">
+	   <parameter name="Emailname" value="9148617954"/>
+	     <parameter name="Password" value="914861795488"/>
+	    <classes>
+	      <class name="com.amazon.automation.NegativeScenario4Test"/>
+	    </classes>
+  </test> 
+</suite> 

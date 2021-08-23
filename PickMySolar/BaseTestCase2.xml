@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+
+  <test  name="Amazon Login" preserve-order="true">
+   <parameter name="Emailname" value="9148617954"/>
+    <parameter name="Password" value="9148617954"/>
+    <classes>
+      <class name="com.amazon.automation.LoginToAmazonTest"/>
+    </classes>
+  </test>
+  
+  <test  name="Add Watchto cart" preserve-order="true">
+    <classes>
+      <class name="com.amazon.automation.AddWatchToCartTest"/>
+    </classes>
+  </test>
+  
+  <test  name="Amazon logout" preserve-order="true">
+    <classes>
+      <class name="com.amazon.automation.LogoutToAmazonTest"/>
+    </classes>
+  </test>
+  
+ 
+</suite> 

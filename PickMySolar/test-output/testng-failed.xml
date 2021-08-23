@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Add Olar panel to cart cart(failed)">
+    <parameter name="SearchCategory" value="Electronics"/>
+    <parameter name="SearchType" value="solar panel"/>
+    <classes>
+      <class name="com.amazon.watch.AddSolarPanelToCartTest">
+        <methods>
+          <include name="addsolarpanel"/>
+          <include name="ConfigBeforeClass"/>
+          <include name="configAfterClass"/>
+        </methods>
+      </class> <!-- com.amazon.watch.AddSolarPanelToCartTest -->
+    </classes>
+  </test> <!-- Add Olar panel to cart cart(failed) -->
+  <test thread-count="5" name="Amazon logout(failed)">
+    <classes>
+      <class name="com.amazon.watch.LogoutToAmazonTest">
+        <methods>
+          <include name="logout"/>
+          <include name="ConfigBeforeClass"/>
+          <include name="configAfterClass"/>
+        </methods>
+      </class> <!-- com.amazon.watch.LogoutToAmazonTest -->
+    </classes>
+  </test> <!-- Amazon logout(failed) -->
+</suite> <!-- Failed suite [Suite] -->
